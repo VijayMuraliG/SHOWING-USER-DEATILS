@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body style="background-color: yellow">
+<center>
+<form action="form2/" method='POST'>{% csrf_token %}
+uname:<input type="text" name="uname" value="" placeholder="Enter The Uname" required="" id="uname"><br><br>
+password:<input type="password" required="" placeholder="Enter The Password" pattern=".{6,}" name="password" id="password"><br><br>
+<input type="submit" value="SUBMIT">
+</form></center>
+
+
+
+
+
+</body>
+</html>

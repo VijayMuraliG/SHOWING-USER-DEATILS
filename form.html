@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+	div {
+  margin: 0;
+  padding: 0;
+  display: block;
+  font-size: 100%;
+  
+  text-align: center;
+  float:centerz;}
+
+	</style>
+</head>
+<body style="background-color: #BC5FA9"><div>
+ <form action="form1/" method='POST' >
+ {%csrf_token%}
+uname:<input type="text" name="uname" value="" placeholder="Enter The Uname" required="" id="uname" /><br><br>
+
+mnumber:<input type="mobile" required="" placeholder="Enter The Mnumber" pattern="[789][0-9]{9}" name="mnumber" value="" id="mnumber" /><br><br>
+
+mailid:<input type="mail" required="" placeholder="Enter The Mailid" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" name="mailid" value="" id="mailid" /><br><br>
+
+address:<textarea requiredrows="5" required="" placeholder="Enter The Address" name="address" value="" id="address"></textarea><br><br>
+password:<input type="password" required="" placeholder="Enter The Password" pattern=".{6,}" name="password" id="password" value="" /><br><br>
+
+confirmpassword:<input type="password" required="" placeholder="Re-Enter The Password" name="confirmpassword" id="confirmpassword" value="" /><br><br>
+
+<center><input type="submit" value="Submit" /></center>
+
+</form>
+
+<div>
+
+
+
+
+
+</body>
+</html>
